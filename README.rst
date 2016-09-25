@@ -19,7 +19,7 @@ SRLV requires::
 - scikit-learn (>= 0.17.1).
 
 
-User installation
+Installation
 ~~~~~~~~~~~~~~~~~
 
 If you already have a working installation of ``pip`` ::
