@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import pandas as pd
 import argparse
+import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -43,9 +43,9 @@ class Train(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--idItem', type=int, help='Id do item')
-    parser.add_argument('--nResult', type=int, help='Quantidade de recomendações')
-    parser.add_argument('--path', type=str, help='Caminho do arquivo dataSet')
+    parser.add_argument('--nResult', type=int, help='Id do item')
+    parser.add_argument('--file', type=str, help='Id do item')
     args = parser.parse_args()
 
-    t = Train(args.path)
-    t.recommend(args.item, args.qtd)
+    t = Train(args.file)
+    t.recommend(args.idItem, args.nResult)
