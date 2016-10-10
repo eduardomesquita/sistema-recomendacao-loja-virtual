@@ -43,8 +43,8 @@ class Train(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--idItem', type=int, help='Id do item')
-    parser.add_argument('--nResult', type=int, help='Id do item')
-    parser.add_argument('--file', type=str, help='Id do item')
+    parser.add_argument('--nResult', type=int, help='Numero itens recomendados')
+    parser.add_argument('--file', type=str, help='Arquivo contendo os dados')
     args = parser.parse_args()
 
     t = Train(args.file)
